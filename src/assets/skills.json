@@ -1,0 +1,51 @@
+ [
+        {
+            "name": "Angular",
+            "exp": "2.8 years"
+        },
+        {
+            "name": "TypeScript",
+            "exp": "2.8 years"
+        },
+        {
+            "name": "SCSS",
+            "exp": "2.8 years"
+        },
+        {
+            "name": "HTML5",
+            "exp": "3.2 years"
+        },
+        {
+            "name": "JavaScript (ES6+)",
+            "exp": "3.2 years"
+        },
+        {
+            "name": "REST APIs",
+            "exp": "3.2 years"
+        },
+        {
+            "name": "State Management (NgRx, RxJS)",
+            "exp": "2.8 years"
+        },
+         {
+            "name": "State Management (NgRx, RxJS)",
+            "exp": "2.8 years"
+        },
+        {
+            "name": "Responsive Design",
+            "exp": "3.2 years"
+        },
+        {
+            "name": "Cross-Browser Compatibility",
+            "exp": "3.2 years"
+        },
+        {
+            "name": "Version Control (Git, GitHub, Bitbucket)",
+            "exp": "3.2 years"
+        },
+        {
+            "name": "Agile Methodologies",
+            "exp": "3.2 years"
+        }
+        
+    ]

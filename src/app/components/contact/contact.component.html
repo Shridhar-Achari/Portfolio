@@ -1,0 +1,11 @@
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    @if(contact){
+    <p><strong>Email: </strong> <a [href]="'mailto:' + contact.email" target="_blank">{{contact.email}}</a></p>
+    <p><strong>Phone: </strong> <a [href]="'tel:' + contact.phone">{{contact.phone}}</a></p>
+    <p><strong>Location: </strong>{{contact.location}}</p>
+    <p><strong>LinkedIn: </strong> <a [href]="contact.linkedin" target="_blank">{{contact.linkedin}}</a></p>
+    <p><strong>GitHub: </strong> <a [href]="contact.github" target="_blank">{{contact.github}}</a></p>
+    <a [href]="'assets/'+ contact.resume" [download]="contact.resume" type="application/pdf" class="btn resume-btn">Download Resume (PDF)</a>
+    }
+  </section>

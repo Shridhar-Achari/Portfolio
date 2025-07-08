@@ -1,0 +1,7 @@
+ <section id="about" class="about">
+    <h2>About Me</h2>
+    @if(info){
+      <img [src]="'assets/images/' + info.image" alt="{{info.name}}" class="profile-image">
+     <p>{{info.description}}</p>
+    }   
+  </section>

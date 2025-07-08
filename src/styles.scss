@@ -1,1 +1,211 @@
 /* You can add global styles to this file, and also import other style files */
+$primary-color: #0057b8;
+$secondary-color: #f9f9f9;
+$font-stack: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+body {
+  font-family: $font-stack;
+  margin: 0;
+  padding: 0;
+  background-color: $secondary-color;
+  color: #333;
+}
+
+.header {
+  // background-color: $primary-color;
+  // padding: 1rem;
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // max-width: 1200px;
+    margin: auto;
+
+    .logo {
+      color: #fff;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+
+      li a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: 500;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+.hero {
+  background: linear-gradient(to right, #0057b8, #003f88);
+  color: white;
+  padding: 5rem 1rem;
+  text-align: center;
+
+  .content {
+    max-width: 800px;
+    margin: auto;
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 1.5rem;
+      background: white;
+      color: $primary-color;
+      padding: 0.75rem 1.5rem;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+
+      &:hover {
+        background: #e0e0e0;
+      }
+    }
+  }
+}
+
+section {
+  max-width: 1000px;
+  margin: 4rem auto;
+  padding: 0 1rem;
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+}
+
+.about,
+.skills,
+.projects,
+.contact {
+  text-align: center;
+}
+
+.skill-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  padding: 0;
+
+  li {
+    background: #fff;
+    padding: 0.75rem 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+  }
+}
+
+
+.projects {
+  text-align: center;
+  padding: 2rem 1rem;
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 0 1rem;
+    justify-items: center;
+  }
+
+  .project-card {
+    background: #fff;
+    padding: 1.5rem;
+    margin: 1rem auto;
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    // max-width: 360px;
+    // width: 100%;
+
+  
+    .project-image {
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+  .project-details{
+    h3 {
+      margin-top: 0;
+      font-size: 1.25rem;
+      color: #0057b8;
+    }
+
+    p {
+      font-size: 1rem;
+      color: #444;
+    }
+  }
+   .view-btn {
+        background-color: $primary-color;
+        color: #fff;
+        border: none;
+        padding: 0.5rem 1rem;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: background 0.2s ease;
+
+        &:hover {
+          background-color: adjust-color($primary-color, $lightness: -10%);
+
+        }
+      }
+
+    &:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    }
+  
+}
+ 
+}
+
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #333;
+  color: #fff;
+}
+
+.resume-btn {
+  background-color: #0057b8;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  transition: background 0.3s;
+
+  &:hover {
+    background-color: #003f88;
+  }
+}

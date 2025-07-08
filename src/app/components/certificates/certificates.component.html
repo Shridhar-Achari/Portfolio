@@ -1,0 +1,9 @@
+<section id="certificate" class="certificate">
+    <h2>Certifications</h2>
+      <div> @for(certificate of certificates; track $index) {
+     <p><strong>Name: </strong>{{certificate.name}}</p>
+    <p><strong>Duration: </strong>{{certificate.duration}}</p>
+    <p><strong>Certification: </strong>{{certificate.certification}}</p>
+    <p><strong>View Certificate: </strong> <a [href]="certificate.link" target="_blank">{{certificate.link}}</a></p>
+      }</div>
+</section>
