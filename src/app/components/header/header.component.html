@@ -1,6 +1,5 @@
   <header class="header">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-     
       <div class="container-fluid">
         <div>
           <img class="mx-3" src="assets/images/sa-logo.jpg" alt="logo" style="width: 50px; border-radius: 50%;" />
@@ -8,7 +7,7 @@
           <a class="navbar-brand" href="#about">{{info.name}}</a>
                 }
        </div>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="true" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button> 
 
@@ -34,7 +33,8 @@
         <li class="nav-item">
           <a class="nav-link" [href]="'assets/'+contact.resume" [download]="contact.resume" type="application/pdf">Download Resume (PDF)</a>
         </li>
-         }  
+           }
+         
       </ul>
       </span>
       </div>
